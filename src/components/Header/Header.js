@@ -26,14 +26,26 @@ const Header = () => {
   );
 };
 
+
 const MainHeader = styled.div`
-  padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  padding: 21px 32px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+
+  & > a {
+    margin-right: auto;
+  }
 `;
 
-const Nav = styled.nav``;
+const Nav = styled.nav`
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+`;
 
 const NavLink = styled.a`
+  padding: 0 24px;
   font-size: 1.125rem;
   text-transform: uppercase;
   text-decoration: none;
